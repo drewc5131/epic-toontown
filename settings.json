@@ -1,0 +1,21 @@
+{
+  "aspectRatio": 0,
+  "camSensitivityX": 0.31,
+  "camSensitivityY": 0.21,
+  "controllerBrand": 0,
+  "detailDistance": 2,
+  "displayMode": 0,
+  "fullscreen": false,
+  "loadDisplay": "pandagl",
+  "music": true,
+  "musicVol": 1.0,
+  "res": [
+    1280,
+    720
+  ],
+  "sfx": true,
+  "sfxVol": 1.0,
+  "speakerMode": 0,
+  "textureQuality": 3,
+  "toonChatSounds": true
+}
