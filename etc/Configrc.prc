@@ -3,7 +3,7 @@ ime-aware 1
 ime-hide 1
 collect-tcp 1
 server-version sv1.0.47.38
-model-path resources
+model-path ../resources
 dc-file etc/toon.dc
 dc-file etc/otp.dc
 window-title Toontown
