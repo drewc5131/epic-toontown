@@ -30,4 +30,5 @@ echo ===============================
 %PPYTHON_PATH% -m toontown.uberdog.UDStart --base-channel %BASE_CHANNEL% ^
                --max-channels %MAX_CHANNELS% --stateserver %STATESERVER% ^
                --astron-ip %ASTRON_IP% --eventlogger-ip %EVENTLOGGER_IP% --gen-services
+pause
 goto main

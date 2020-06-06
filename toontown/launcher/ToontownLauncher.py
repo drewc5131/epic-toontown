@@ -23,7 +23,7 @@ class LogAndOutput:
         self.log.flush()
         self.orig.flush()
 
-log = open(logfile, 'a')
+log = open(os.path.join('logs', logfile), 'a')
 logOut = LogAndOutput(sys.__stdout__, log)
 logErr = LogAndOutput(sys.__stderr__, log)
 sys.stdout = logOut
