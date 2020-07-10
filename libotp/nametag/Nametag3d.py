@@ -5,7 +5,7 @@ from panda3d.core import *
 from . import NametagGlobals
 from .Nametag import Nametag
 from ._constants import *
-
+from direct.interval.IntervalGlobal import * 
 
 class Nametag3d(Nametag, PandaNode):
     def __init__(self):
@@ -138,6 +138,12 @@ class Nametag3d(Nametag, PandaNode):
 
         self.m_name_frame = balloon.m_text_frame
         self.m_field_396 = 1
+        self.m_np_balloon.setScale(0, 0, 0)
+        self.balloonAnim = Sequence(
+          Sequence(
+            self.m_np_balloon.scaleInterval(.2, VBase3(1.1, 1.1, 1.1), blendType = 'easeInOut'),
+            self.m_np_balloon.scaleInterval(.09, VBase3(1, 1, 1), blendType = 'easeInOut')))
+        self.balloonAnim.start()
 
     def generateName(self):
         v4 = self.getState()
